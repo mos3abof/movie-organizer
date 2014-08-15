@@ -15,6 +15,7 @@ def proper_name(movie_name):
 
     # replace spaces with dots :)
     movie_name_list = movie_name.split(' ')
+    movie_name_list = filter(None, movie_name_list)
     movie_name = '.'.join(e for e in movie_name_list).lower()
     return movie_name
 
